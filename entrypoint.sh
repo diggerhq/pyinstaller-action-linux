@@ -26,6 +26,6 @@ if [ -f requirements.txt ]; then
     pip install -r requirements.txt
 fi # [ -f requirements.txt ]
 
-pyinstaller --clean -y --dist ./dist/linux --workpath /tmp $SPEC_FILE
+pyinstaller --clean -y --dist ./dist/dg-linux --workpath /tmp $SPEC_FILE
 
-chown -R --reference=. ./dist/linux
+chown -R --reference=. ./dist/dg-linux
